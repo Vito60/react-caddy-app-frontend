@@ -84,7 +84,6 @@ export class ClubForm extends Component {
               variant="outlined" 
               name="brand"
               type="text"
-              required
               value={this.state.brand} 
               onChange={this.handleChange} />
             <br/>
@@ -95,7 +94,6 @@ export class ClubForm extends Component {
               variant="outlined" 
               name="model"
               type="text"
-              required
               value={this.state.model} 
               onChange={this.handleChange} />
             <br/>
@@ -106,7 +104,6 @@ export class ClubForm extends Component {
               variant="outlined" 
               name="type"
               type="text"
-              required
               value={this.state.type} 
               onChange={this.handleChange} />
             <br/>
@@ -117,7 +114,6 @@ export class ClubForm extends Component {
               variant="outlined" 
               name="loft"
               type="text"
-              required
               value={this.state.loft} 
               onChange={this.handleChange} />
             <br/>

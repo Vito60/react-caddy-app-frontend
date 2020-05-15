@@ -82,7 +82,6 @@ export class NewPro extends Component {
               variant="outlined" 
               name="firstName"
               type="text"
-              required
               value={this.state.firstName} 
               onChange={this.handleChange} />
             <br/>
@@ -93,7 +92,6 @@ export class NewPro extends Component {
               variant="outlined" 
               name="lastName"
               type="text"
-              required
               value={this.state.lastName} 
               onChange={this.handleChange} />
             <br/>
@@ -104,7 +102,6 @@ export class NewPro extends Component {
               variant="outlined" 
               name="age"
               type="text"
-              required
               value={this.state.age} 
               onChange={this.handleChange} />
             <br/>
@@ -115,7 +112,6 @@ export class NewPro extends Component {
               variant="outlined" 
               name="homeState"
               type="text"
-              required
               value={this.state.homeState} 
               onChange={this.handleChange} />
             <br/>
@@ -126,7 +122,6 @@ export class NewPro extends Component {
               variant="outlined" 
               name="homeTown"
               type="text"
-              required
               value={this.state.homeTown} 
               onChange={this.handleChange} />
             <Button variant="outlined" placeholder="submit" type="submit"style={{margin: 8 }}>Submit</Button>
