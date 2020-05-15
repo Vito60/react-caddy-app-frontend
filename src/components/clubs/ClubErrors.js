@@ -24,7 +24,7 @@ const FormErrors = (props) => {
             <ul style={{listStyle: "none"}}>
                 {errorKeys.map(key => {
                     return(
-                    <u style={{color: "red"}}><li style={{color: "black"}}>{key.replace("_", " ")}: {errorArray[key]}</li></u>
+                    <li style={{color: "#c62828"}}>{key.replace("_", " ")}: {errorArray[key]}</li>
                     )
                 })}
             </ul>
@@ -41,17 +41,17 @@ const FormErrors = (props) => {
       onClose={handleClose}
       aria-labelledby="draggable-dialog-title"
     >
-      <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
+      <DialogTitle style={{ cursor: 'move'}} id="draggable-dialog-title">
         
       </DialogTitle>
-      <DialogContent>
+      <DialogContent style={{backgroundColor: 'grey'}}>
         <DialogContentText>
         <div>
         {errors(props.errors, Object.keys(props.errors))}
       </div>
         </DialogContentText>
       </DialogContent>
-      <DialogActions>
+      <DialogActions >
         <Button autoFocus onClick={handleClose} color="primary">
           Cancel
         </Button>
