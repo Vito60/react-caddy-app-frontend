@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ClubErrors from './ClubErrors'
+import ClubErrorsButton from './ClubErrorsButton'
 import { connect } from 'react-redux'
 import { createClub } from '../../actions/Pros'
 import { Redirect } from "react-router-dom";
@@ -48,7 +48,7 @@ export class ClubForm extends Component {
       handleErrors = errors => {
         if (errors !== undefined) {
           return (
-            <ClubErrors errors={errors}/>
+            <ClubErrorsButton/>
           )
         } 
       }

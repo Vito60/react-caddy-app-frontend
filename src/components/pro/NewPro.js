@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import FormErrors from './FormErrors'
+import ProErrorsButton from './ProErrorsButton'
 import { connect } from 'react-redux'
 import { createPro } from '../../actions/Pros'
 import { Redirect } from "react-router-dom";
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-export class NewPro extends Component {
+export class ProForm extends Component {
 
     state = {
         firstName: '',
@@ -46,7 +46,7 @@ export class NewPro extends Component {
       handleErrors = errors => {
         if (errors !== undefined) {
           return (
-            <FormErrors errors={errors}/>
+            <ProErrorsButton/>
           )
         } 
       }
@@ -138,4 +138,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { createPro })(NewPro);
+export default connect(mapStateToProps, { createPro })(ProForm);
