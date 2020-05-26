@@ -34,7 +34,7 @@ const useStyles = makeStyles({
             <React.Fragment>
             <CssBaseline />
             <Container style={{width: '100%', height: '100%'}} >
-              <Card className={classes.root} variant="outlined">
+              <Card className={classes.root} variant="outlined" >
               <CardContent>
                 <Typography variant="h2" component="h2">
                     Welcome
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
                 <Typography className={classes.pos} color="textSecondary">
                     
                 </Typography>
-                <Typography variant="h7" component="h2">
+                <Typography variant="h4" component="h2">
                     This is Caddy App. An application to add and view some of your
                     favorite PGA proffesionals.
                 </Typography>

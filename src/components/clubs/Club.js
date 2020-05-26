@@ -5,7 +5,7 @@ import React from 'react'
 export default function Club(props) {
     const clubList = (club) => {
         return (
-            <div >
+            <div key={club.id}>
                 <br></br>
                 Brand: {club.brand}
                 <br></br>

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProCard from '../components/pro/ProCard'
+import ProCard from './ProCard'
 import { connect } from 'react-redux'
 
 

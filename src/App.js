@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import NewPro from './components/pro/NewPro'
 import ClubForm from './components/clubs/ClubForm'
-import ProsContainer from './containers/ProsContainer'
+import ProsContainer from './components/pro/ProsContainer'
 import Home from './components/home/Home'
 
 

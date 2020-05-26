@@ -53,9 +53,9 @@ export default function Nav() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
+          <MenuItem onClick={handleClose}><Link to='/'>Home</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to='/pros'>View Pros</Link></MenuItem>
           <MenuItem onClick={handleClose}><Link to='/pro/new'>Add Pro</Link></MenuItem>
-          <MenuItem onClick={handleClose}><Link to='/'>Home</Link></MenuItem>
         </Menu>
             </Toolbar>
       </AppBar>
