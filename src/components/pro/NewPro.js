@@ -6,7 +6,7 @@ import { Redirect } from "react-router-dom";
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-export class ProForm extends Component {
+export class NewPro extends Component {
 
     state = {
         firstName: '',
@@ -138,4 +138,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { createPro })(ProForm);
+export default connect(mapStateToProps, { createPro })(NewPro);

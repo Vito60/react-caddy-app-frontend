@@ -36,7 +36,6 @@ export class ClubForm extends Component {
             loft: this.state.loft,
             pro_id: this.state.proId[0]
           }
-          console.log(club)
           this.props.createClub(club)
           .then(resp => {
             if (resp.id) {
