@@ -11,7 +11,7 @@ export const clubError = club => ({ type: "ADD_CLUB_ERRORS", club })
 
 export const fetchPros = () => {
     return dispatch => {
-      return fetch("http://localhost:3001/pros")
+      return fetch("https://rails-api-caddy-app-backend.herokuapp.com/pros")
         .then(resp => resp.json())
         .then(prosJSON => {
           if (prosJSON.error) {
@@ -28,7 +28,7 @@ export const fetchPros = () => {
       const body = {
         pro
       }
-      return fetch("http://localhost:3001/pros", {
+      return fetch("https://rails-api-caddy-app-backend.herokuapp.com/pros", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
