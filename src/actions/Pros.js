@@ -53,7 +53,7 @@ export const createClub = (club) => {
     const body = {
       club
     }
-    return fetch("http://localhost:3001/clubs", {
+    return fetch("https://rails-api-caddy-app-backend.herokuapp.com/clubs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
